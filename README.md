@@ -4,11 +4,15 @@ Toy macro policy game prototype with quarterly simulation turns.
 
 ## Features
 
-- Quarterly turns (`Run Quarter`) with a simple macro engine.
-- Core outputs each turn: GDP, inflation, unemployment.
-- Two policy levers:
-  - Fiscal impulse
-  - Monetary policy rate
+- Quarterly turns (`Run Quarter`) driven by a basic macro simulation engine.
+- Policy controls for:
+  - Tax rate (% of GDP)
+  - Government spending (% of GDP)
+  - Money supply growth (%)
+  - Base interest rate (%)
+  - Exchange rate regime (free float or managed peg)
+  - Managed exchange rate slider (pesos/USD), dimmed when free float is selected
+- Per-turn outputs include GDP, unemployment, inflation, fiscal deficit/surplus, current account, exchange rate, investment, consumption, government popularity, and HDI.
 
 ## Run locally
 
@@ -19,4 +23,4 @@ Toy macro policy game prototype with quarterly simulation turns.
    ```
 
 2. Open `http://localhost:8000` in your browser.
-3. Adjust the policy levers and click **Run Quarter**.
+3. Set policy levers and click **Run Quarter**.

@@ -13,10 +13,11 @@ body {
   min-height: 100vh;
   display: grid;
   place-items: center;
+  padding: 1rem 0;
 }
 
 .layout {
-  width: min(680px, 94vw);
+  width: min(800px, 94vw);
   display: grid;
   gap: 1rem;
 }
@@ -34,6 +35,11 @@ label {
   margin-bottom: 0.8rem;
 }
 
+select,
+input[type="range"] {
+  width: 100%;
+}
+
 .actions {
   display: flex;
   gap: 0.6rem;
@@ -45,4 +51,8 @@ button {
   background: #fff;
   border-radius: 0.4rem;
   cursor: pointer;
+}
+
+.opaque {
+  opacity: 0.35;
 }

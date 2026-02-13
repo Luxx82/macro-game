@@ -12,14 +12,40 @@
 
       <section class="panel">
         <h2>Policy Levers</h2>
+
         <label>
-          Fiscal impulse
-          <input id="fiscal-impulse" type="range" min="-5" max="5" value="0" step="1" />
+          Tax rate (% of GDP): <span id="tax-rate-value"></span>
+          <input id="tax-rate" type="range" min="5" max="40" value="20" step="1" />
         </label>
+
         <label>
-          Policy rate (%)
-          <input id="policy-rate" type="range" min="0" max="10" value="2" step="0.5" />
+          Government spending (% of GDP): <span id="government-spending-value"></span>
+          <input id="government-spending" type="range" min="10" max="50" value="23" step="1" />
         </label>
+
+        <label>
+          Money supply growth (%): <span id="money-growth-value"></span>
+          <input id="money-growth" type="range" min="0" max="30" value="8" step="1" />
+        </label>
+
+        <label>
+          Base interest rate (%): <span id="base-interest-rate-value"></span>
+          <input id="base-interest-rate" type="range" min="0" max="25" value="10" step="0.5" />
+        </label>
+
+        <label>
+          Exchange rate regime
+          <select id="exchange-regime">
+            <option value="free_float">Free float</option>
+            <option value="peg">Managed peg</option>
+          </select>
+        </label>
+
+        <label>
+          Managed exchange rate: <span id="managed-exchange-rate-value"></span>
+          <input id="managed-exchange-rate" type="range" min="200" max="3000" value="850" step="10" />
+        </label>
+
         <div class="actions">
           <button id="run-quarter" type="button">Run Quarter</button>
           <button id="reset-game" type="button">Reset</button>
