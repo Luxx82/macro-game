@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Macro Policy Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="layout">
+      <h1>Macro Policy Game</h1>
+
+      <section class="panel">
+        <h2>Policy Levers</h2>
+        <label>
+          Fiscal impulse
+          <input id="fiscal-impulse" type="range" min="-5" max="5" value="0" step="1" />
+        </label>
+        <label>
+          Policy rate (%)
+          <input id="policy-rate" type="range" min="0" max="10" value="2" step="0.5" />
+        </label>
+        <div class="actions">
+          <button id="run-quarter" type="button">Run Quarter</button>
+          <button id="reset-game" type="button">Reset</button>
+        </div>
+      </section>
+
+      <section class="panel" id="macro-output" aria-live="polite"></section>
+    </main>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
